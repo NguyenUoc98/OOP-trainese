@@ -1,4 +1,4 @@
-Xây dựng Repo có cấu trúc thư mục như sau:
+## Xây dựng Repo có cấu trúc thư mục như sau:
 
 - **Model.php**: Là base class kết nối và thực thi SQL
 - Các thuộc tính: `$table`, `$select`, `$whereClause`, `$orderClause`, `$groupClause`, `$connection`
@@ -16,3 +16,15 @@ Xây dựng Repo có cấu trúc thư mục như sau:
     - Lương cứng: `8.000.000đ`
     - Thưởng: tùy tháng
 - **index.php**: Thực thi lấy ra lương của 5 nhân viên trong tháng
+
+## Yêu cầu
+
+- Kết quả trả về một mảng các đối tượng 
+- `getFirst()` trả về một đối tượng
+
+## Final
+
+```php
+$its = IT::query()->where('bonus', '>', 0)->orderBy('bonus', 'desc')->getFirst();
+$cvss = CVS::query()->select('name', 'salary', 'kpi')->where('kpi', '>', 100)->orderBy('kpi', 'desc')->getFirst();
+```
