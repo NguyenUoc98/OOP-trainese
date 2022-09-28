@@ -7,6 +7,9 @@
  * Date: 28/09/2022
  * Time: 09:35
  */
+
+require_once 'helper.php';
+
 abstract class Model
 {
     /**
@@ -107,10 +110,10 @@ abstract class Model
      */
     private function connect()
     {
-        $servername = "localhost";
-        $username   = "root";
-        $password   = "uocnv1998";
-        $database   = "test_oop";
+        $servername = config('database.host');
+        $username   = config('database.username');
+        $password   = config('database.password');
+        $database   = config('database.database_name');
 
         $this->connection = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
         // set the PDO error mode to exception
