@@ -21,6 +21,10 @@
 
 - Kết quả trả về một mảng các đối tượng 
 - `getFirst()` trả về một đối tượng
+- Add autoload project
+
+**Note:** 
+- Run `composer dump-autoload` to generate autoload file
 
 ## Final
 
