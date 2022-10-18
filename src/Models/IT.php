@@ -8,8 +8,10 @@
  * Time: 10:10
  */
 
-require_once 'Model.php';
-require_once 'Staff.php';
+namespace Uocnv\OopTrainese\Models;
+
+use Uocnv\OopTrainese\Interfaces\Staff;
+use Uocnv\OopTrainese\Models\Model;
 
 class IT extends Model implements Staff
 {

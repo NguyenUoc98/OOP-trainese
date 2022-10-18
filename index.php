@@ -7,8 +7,10 @@
  * Time: 11:45
  */
 
-require_once 'IT.php';
-require_once 'CVS.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Uocnv\OopTrainese\Models\IT;
+use Uocnv\OopTrainese\Models\CVS;
 
 $its = IT::query()->where('bonus', '>', 0)->orderBy('bonus', 'desc')->getFirst();
 $cvss = CVS::query()->select('name', 'salary', 'kpi')->where('kpi', '>', 100)->orderBy('kpi', 'desc')->getFirst();

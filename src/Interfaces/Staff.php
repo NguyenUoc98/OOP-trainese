@@ -8,6 +8,10 @@
  * Time: 13:28
  */
 
+namespace Uocnv\OopTrainese\Interfaces;
+
+require __DIR__ . '/../../vendor/autoload.php';
+
 interface Staff
 {
     public function getSalary(): int;

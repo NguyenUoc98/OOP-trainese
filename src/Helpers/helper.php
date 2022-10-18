@@ -10,7 +10,7 @@
 if (!function_exists('config')) {
     function config(string $path)
     {
-        $configs = require __DIR__ . '/config.php';
+        $configs = require __DIR__ . '/../configs/config.php';
         $params  = explode('.', $path);
 
         foreach ($params as $param) {

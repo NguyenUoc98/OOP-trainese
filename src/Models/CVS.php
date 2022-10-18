@@ -8,8 +8,10 @@
  * Time: 13:28
  */
 
-require_once 'Model.php';
-require_once 'Staff.php';
+namespace Uocnv\OopTrainese\Models;
+
+use Uocnv\OopTrainese\Interfaces\Staff;
+use Uocnv\OopTrainese\Models\Model;
 
 class CVS extends Model implements Staff
 {

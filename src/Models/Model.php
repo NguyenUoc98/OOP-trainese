@@ -2,13 +2,15 @@
 
 /**
  * Created by PhpStorm.
- * Filename: Model.php
+ * Filename: Models.php
  * User: Nguyễn Văn Ước
  * Date: 28/09/2022
  * Time: 09:35
  */
 
-require_once 'helper.php';
+namespace Uocnv\OopTrainese\Models;
+
+require __DIR__ . '/../../vendor/autoload.php';
 
 abstract class Model
 {
